@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class JVMAnalyzer extends AnalyzerBase {
     private static final GarbageCollectorMXBean gcBean =
-            ManagementFactory.getGarbageCollectorMXBeans().get(0); // 假设使用第一个 GC
+            ManagementFactory.getGarbageCollectorMXBeans().get(0);
     private static final CompilationMXBean jitBean =
             ManagementFactory.getCompilationMXBean();
     private static final MemoryMXBean memoryBean =
